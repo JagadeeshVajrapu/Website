@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Harsha Perfect Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#9333ea',
+                        dark: '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold font-heading text-primary hover:text-secondary transition transform hover:scale-105">
+                Harsha Perfect Solutions
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="font-medium hover:text-primary transition relative group">Home</a>
+                <a href="services.html" class="font-medium hover:text-primary transition relative group">Services</a>
+                <a href="careers.html" class="font-medium hover:text-primary transition relative group">Careers</a>
+                <a href="portfolio.html" class="font-medium hover:text-primary transition relative group">Portfolio</a>
+                <a href="about.html"
+                    class="font-medium text-primary hover:text-primary transition relative group font-bold">
+                    About Us
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></span>
+                </a>
+                <a href="contact.html"
+                    class="px-5 py-2.5 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="md:hidden bg-white shadow-lg absolute top-full left-0 w-full px-6 flex flex-col items-center gap-4 py-4">
+            <a href="index.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Home</a>
+            <a href="index.html#services"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Services</a>
+            <a href="about.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">About Us</a>
+            <a href="careers.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Careers</a>
+            <a href="contact.html" class="px-5 py-2 bg-primary text-white rounded-full w-full text-center">Contact
+                Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-20 bg-gray-900 text-white relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop')] bg-cover bg-center opacity-20">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10 fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold font-heading mb-4">About Us</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Innovating the future, one solution at a time.</p>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="fade-in-up">
+                <h3 class="text-primary font-bold uppercase tracking-wider mb-2">Our Mission & Vision</h3>
+                <h2 class="text-3xl md:text-4xl font-bold font-heading mb-6">Designed with Purpose, Built with
+                    Innovation</h2>
+
+                <div class="mb-8">
+                    <h4 class="text-xl font-bold mb-2 flex items-center"><i
+                            class="fas fa-rocket text-secondary mr-3"></i> Mission</h4>
+                    <p class="text-gray-600 leading-relaxed pl-8 border-l-2 border-gray-200">
+                        "Design with purpose, build with innovation."
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-2 flex items-center"><i class="fas fa-eye text-secondary mr-3"></i>
+                        Vision</h4>
+                    <p class="text-gray-600 leading-relaxed pl-8 border-l-2 border-gray-200">
+                        "To become a global leader in digital transformation."
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 fade-in-up">
+                <img src="images/odiyamma/mascot.png" class="rounded-2xl shadow-lg mt-8 hover-lift bg-odiyamma p-4">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop"
+                    class="rounded-2xl shadow-lg hover-lift">
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-heading">Our Core Values</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- Value 1 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-lg transition hover:-translate-y-2 fade-in-up spotlight-card">
+                    <i class="fas fa-chess-knight text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold">Strategy</h4>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-lg transition hover:-translate-y-2 fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <i class="fas fa-lightbulb text-3xl text-secondary mb-4"></i>
+                    <h4 class="font-bold">Innovation</h4>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-lg transition hover:-translate-y-2 fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <i class="fas fa-users text-3xl text-pink-500 mb-4"></i>
+                    <h4 class="font-bold">Collaboration</h4>
+                </div>
+                <!-- Value 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-lg transition hover:-translate-y-2 fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <i class="fas fa-tachometer-alt text-3xl text-green-500 mb-4"></i>
+                    <h4 class="font-bold">Efficiency</h4>
+                </div>
+                <!-- Value 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-lg transition hover:-translate-y-2 fade-in-up"
+                    style="transition-delay: 0.4s;">
+                    <i class="fas fa-chart-line text-3xl text-orange-500 mb-4"></i>
+                    <h4 class="font-bold">Growth</h4>
+                </div>
+                <!-- Value 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-lg transition hover:-translate-y-2 fade-in-up"
+                    style="transition-delay: 0.5s;">
+                    <i class="fas fa-star text-3xl text-yellow-500 mb-4"></i>
+                    <h4 class="font-bold">Excellence</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="fade-in-up">
+                <div class="text-4xl md:text-5xl font-bold mb-2 font-heading stat-number" data-target="150"
+                    data-suffix="+">0</div>
+                <p class="text-blue-100">Projects Completed</p>
+            </div>
+            <div class="fade-in-up" style="transition-delay: 0.1s;">
+                <div class="text-4xl md:text-5xl font-bold mb-2 font-heading stat-number" data-target="50"
+                    data-suffix="+">0</div>
+                <p class="text-blue-100">Happy Clients</p>
+            </div>
+            <div class="fade-in-up" style="transition-delay: 0.2s;">
+                <div class="text-4xl md:text-5xl font-bold mb-2 font-heading stat-number" data-target="99"
+                    data-suffix="%">0</div>
+                <p class="text-blue-100">Success Rate</p>
+            </div>
+            <div class="fade-in-up" style="transition-delay: 0.3s;">
+                <div class="text-4xl md:text-5xl font-bold mb-2 font-heading">24/7</div>
+                <p class="text-blue-100">Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-heading">Meet Our Experts</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Team Member Card Template -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[3/4] fade-in-up cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Director">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-4 group-hover:translate-y-0 transition duration-300">
+                        <h3 class="font-bold text-lg mb-1">Director</h3>
+                        <p
+                            class="text-sm text-gray-300 mb-4 opacity-0 group-hover:opacity-100 transition duration-300 delay-100">
+                            Visionary Leadership</p>
+                        <div
+                            class="flex flex-col gap-1 text-xs opacity-0 group-hover:opacity-100 transition duration-300 delay-200">
+                            <span><i class="fas fa-envelope mr-2"></i>director@thehps.in</span>
+                            <span><i class="fas fa-phone mr-2"></i>+91 98481 55501</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[3/4] fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="PM Tech">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-4 group-hover:translate-y-0 transition duration-300">
+                        <h3 class="font-bold text-lg mb-1">Project Manager</h3>
+                        <p class="text-sm text-gray-300 text-xs uppercase tracking-wide">Technical</p>
+                        <div
+                            class="flex flex-col gap-1 text-xs opacity-0 group-hover:opacity-100 transition duration-300 delay-200 mt-3">
+                            <span><i class="fas fa-envelope mr-2"></i>tech@thehps.in</span>
+                            <span><i class="fas fa-phone mr-2"></i>+91 98765 43210</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[3/4] fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="PM Ops">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-4 group-hover:translate-y-0 transition duration-300">
+                        <h3 class="font-bold text-lg mb-1">Project Manager</h3>
+                        <p class="text-sm text-gray-300 text-xs uppercase tracking-wide">Operational</p>
+                        <div
+                            class="flex flex-col gap-1 text-xs opacity-0 group-hover:opacity-100 transition duration-300 delay-200 mt-3">
+                            <span><i class="fas fa-envelope mr-2"></i>ops@thehps.in</span>
+                            <span><i class="fas fa-phone mr-2"></i>+91 87654 32109</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[3/4] fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Dev">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-4 group-hover:translate-y-0 transition duration-300">
+                        <h3 class="font-bold text-lg mb-1">Tech Developer</h3>
+                        <p class="text-sm text-gray-300 text-xs uppercase tracking-wide">Full Stack</p>
+                        <div
+                            class="flex flex-col gap-1 text-xs opacity-0 group-hover:opacity-100 transition duration-300 delay-200 mt-3">
+                            <span><i class="fas fa-envelope mr-2"></i>dev@thehps.in</span>
+                            <span><i class="fas fa-phone mr-2"></i>+91 76543 21098</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[3/4] fade-in-up"
+                    style="transition-delay: 0.4s;">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Designer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-6 text-white translate-y-4 group-hover:translate-y-0 transition duration-300">
+                        <h3 class="font-bold text-lg mb-1">Architect</h3>
+                        <p class="text-sm text-gray-300 text-xs uppercase tracking-wide">Design & Innovation</p>
+                        <div
+                            class="flex flex-col gap-1 text-xs opacity-0 group-hover:opacity-100 transition duration-300 delay-200 mt-3">
+                            <span><i class="fas fa-envelope mr-2"></i>design@thehps.in</span>
+                            <span><i class="fas fa-phone mr-2"></i>+91 65432 10987</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Harsha Perfect Solutions</h3>
+                    <p class="text-sm leading-relaxed mb-6">Your Growth, Our Commitment. We deliver innovative software
+                        and IT solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="index.html#services" class="hover:text-primary transition">Services</a></li>
+                        <li><a href="careers.html" class="hover:text-primary transition">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>Web Design & Development</li>
+                        <li>Mobile App Development</li>
+                        <li>Digital Marketing</li>
+                        <li>UI/UX Design</li>
+                        <li>ERP Solutions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Get in Touch</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>31-7-67, Assam Garden St, Bangaramma Metta, Mahaarajupeta, Visakhapatnam, Andhra
+                                Pradesh 530020</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+91 9246615251</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>info@thehps.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 Harsha Perfect Solutions Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>

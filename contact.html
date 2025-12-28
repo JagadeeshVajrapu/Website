@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Harsha Perfect Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#9333ea',
+                        dark: '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold font-heading text-primary hover:text-secondary transition transform hover:scale-105">
+                Harsha Perfect Solutions
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="font-medium hover:text-primary transition relative group">Home</a>
+                <a href="services.html" class="font-medium hover:text-primary transition relative group">Services</a>
+                <a href="careers.html" class="font-medium hover:text-primary transition relative group">Careers</a>
+                <a href="portfolio.html" class="font-medium hover:text-primary transition relative group">Portfolio</a>
+                <a href="about.html" class="font-medium hover:text-primary transition relative group">About Us</a>
+                <a href="contact.html"
+                    class="px-5 py-2.5 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="md:hidden bg-white shadow-lg absolute top-full left-0 w-full px-6 flex flex-col items-center gap-4 py-4">
+            <a href="index.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Home</a>
+            <a href="index.html#services"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Services</a>
+            <a href="about.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">About Us</a>
+            <a href="careers.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Careers</a>
+            <a href="contact.html" class="px-5 py-2 bg-primary text-white rounded-full w-full text-center">Contact
+                Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-20 bg-gray-900 text-white relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop')] bg-cover bg-center opacity-20">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10 fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold font-heading mb-4">Contact Us</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">We'd love to hear from you. Let's start a conversation.
+            </p>
+            <div class="odiyamma-character" aria-hidden="true">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img">
+                    <defs>
+                        <linearGradient id="ody-face-ct" x1="0" x2="1">
+                            <stop offset="0" stop-color="#FFD700"/>
+                            <stop offset="1" stop-color="#00E5FF"/>
+                        </linearGradient>
+                    </defs>
+                    <g>
+                        <circle cx="40" cy="40" r="34" fill="url(#ody-face-ct)" stroke="#fff" stroke-width="2"/>
+                        <rect x="26" y="56" width="28" height="8" rx="4" fill="#fff" opacity="0.85"/>
+                        <circle cx="30" cy="34" r="6" fill="#fff"/>
+                        <circle cx="50" cy="34" r="6" fill="#fff"/>
+                        <circle cx="30" cy="34" r="2" fill="#111"/>
+                        <circle cx="50" cy="34" r="2" fill="#111"/>
+                        <path d="M28 48 Q38 56 52 48" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="py-24 bg-white relative">
+        <!-- Floating shapes background -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-purple-100 rounded-full blur-3xl opacity-50 animate-pulse">
+        </div>
+        <div class="absolute bottom-20 right-10 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-50 animate-pulse"
+            style="animation-delay: 1s;"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+
+            <!-- Contact Info & Map -->
+            <div class="fade-in-up">
+                <h2 class="text-3xl font-bold font-heading mb-8">Get In Touch</h2>
+                <div class="space-y-8 mb-12">
+                    <div class="flex items-start">
+                        <div
+                            class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-primary text-xl mr-6 shrink-0">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Our Location</h4>
+                            <p class="text-gray-600">31-7-67, Assam Garden St, Bangaramma Metta, Mahaarajupeta,
+                                Visakhapatnam, Andhra Pradesh 530020
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div
+                            class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center text-green-600 text-xl mr-6 shrink-0">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Phone Number</h4>
+                            <p class="text-gray-600">+91 9246615251</p>
+                            <p class="text-sm text-gray-400">Mon-Fri 9am-6pm</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div
+                            class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center text-secondary text-xl mr-6 shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Email Address</h4>
+                            <p class="text-gray-600">info@thehps.in</p>
+                            <p class="text-sm text-gray-400">We reply within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="w-full h-64 rounded-2xl overflow-hidden shadow-lg border border-gray-200 map-embed">
+                    <iframe
+                        src="https://maps.google.com/maps?q=31-7-67%2C%20Assam%20Garden%20St%2C%20Bangaramma%20Metta%2C%20Mahaarajupeta%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530020&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100 fade-in-up"
+                style="transition-delay: 0.2s;">
+                <h2 class="text-2xl font-bold font-heading mb-6">Send us a Message</h2>
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="font-semibold text-sm text-gray-700 ml-1">Your Name</label>
+                            <input type="text" placeholder="John Doe"
+                                class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 input-glow transition duration-300">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-semibold text-sm text-gray-700 ml-1">Phone Number</label>
+                            <input type="tel" placeholder="+91 98765 43210"
+                                class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 input-glow transition duration-300">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="font-semibold text-sm text-gray-700 ml-1">Email Address</label>
+                        <input type="email" placeholder="john@example.com"
+                            class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 input-glow transition duration-300">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="font-semibold text-sm text-gray-700 ml-1">Service Interested In</label>
+                        <select
+                            class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 input-glow transition duration-300 text-gray-600 cursor-pointer">
+                            <option value="">Select a Service</option>
+                            <option value="web-design">Website Design</option>
+                            <option value="ui-ux">UI/UX Design</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="custom-software">Custom Software</option>
+                            <option value="app-development">App Development</option>
+                            <option value="automation">Automation & ERP</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="font-semibold text-sm text-gray-700 ml-1">Your Message</label>
+                        <textarea rows="4" placeholder="Tell us about your project..."
+                            class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 input-glow transition duration-300 resize-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition duration-300 flex items-center justify-center gap-2 group">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Harsha Perfect Solutions</h3>
+                    <p class="text-sm leading-relaxed mb-6">Your Growth, Our Commitment. We deliver innovative software
+                        and IT solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="index.html#services" class="hover:text-primary transition">Services</a></li>
+                        <li><a href="careers.html" class="hover:text-primary transition">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>Web Design & Development</li>
+                        <li>Mobile App Development</li>
+                        <li>Digital Marketing</li>
+                        <li>UI/UX Design</li>
+                        <li>ERP Solutions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Get in Touch</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>31-7-67, Assam Garden St, Bangaramma Metta, Mahaarajupeta, Visakhapatnam, Andhra
+                                Pradesh 530020</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+91 9246615251</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>info@thehps.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 Harsha Perfect Solutions Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>

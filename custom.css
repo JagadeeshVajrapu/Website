@@ -1,0 +1,1038 @@
+/* Odiyamma Buntyy Theme Variables */
+:root {
+    --ody-yellow: #FFD700;
+    --ody-pink: #FF007F;
+    --ody-cyan: #00E5FF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap');
+
+/* Animations */
+@keyframes float-ody {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes wiggle-ody {
+
+    0%,
+    100% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Utility Classes */
+.text-ody-gradient {
+    background: linear-gradient(135deg, var(--ody-pink), var(--ody-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-ody-fun {
+    background-image: radial-gradient(circle at 10% 20%, rgba(255, 0, 127, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.05) 0%, transparent 20%);
+}
+
+.sticker-float {
+    animation: float-ody 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.hover-wiggle:hover {
+    animation: wiggle-ody 0.5s ease-in-out infinite;
+}
+
+/* Loader Styles */
+#ody-loader {
+    position: fixed;
+    inset: 0;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.5s ease-out;
+}
+
+.loader-text {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--ody-pink);
+    animation: wiggle-ody 1s infinite alternate;
+}
+
+/* Existing Import */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+/* Adding Fredoka for playful text */
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff007f;
+    border-radius: 4px;
+}
+
+/* Updated to Hot Pink */
+::-webkit-scrollbar-thumb:hover {
+    background: #e0006f;
+}
+
+/* Animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.zoom-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Typing & Gradient */
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #ff007f, #00e5ff);
+    /* Pink to Cyan */
+}
+
+/* Navbar */
+.scrolled-nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+#mobile-menu.open {
+    max-height: 500px;
+}
+
+/* Vertical Logo Slider */
+.logo-slider {
+    width: 100%;
+    height: 300px;
+    /* Fixed height for vertical scroll */
+    overflow: hidden;
+    position: relative;
+    background: #f9fafb;
+    /* Light bg to match section */
+}
+
+.logo-slide-track {
+    display: flex;
+    flex-direction: column;
+    animation: scroll-vertical 15s linear infinite;
+}
+
+.logo-slide {
+    display: flex;
+    /* Ensure items are flex for centering if needed */
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    /* Vertical Margin */
+    color: #9ca3af;
+    /* Gray-400 */
+    font-weight: 700;
+    font-size: 1.5rem;
+    gap: 0.5rem;
+}
+
+@keyframes scroll-vertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50%);
+        /* Scroll halfway assuming duplicated content */
+    }
+}
+
+/* Original Horizontal Scroll (Commented out to replace, or kept if different class used) */
+/* 
+.logo-slide-track-horizontal {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll { ... } 
+*/
+
+/* Inputs */
+.input-glow:focus {
+    box-shadow: 0 0 0 3px rgba(255, 0, 127, 0.3);
+    border-color: #ff007f;
+    outline: none;
+}
+
+/* New Interactive Animations */
+
+/* 3D Tilt Container */
+.tilt-card {
+    will-change: transform;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
+}
+
+/* Spotlight Card */
+.spotlight-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.spotlight-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 0, 127, 0.15), transparent 40%);
+    /* Pink glow */
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.spotlight-card:hover .spotlight-overlay {
+    opacity: 1;
+}
+
+/* BUBBLE BUTTON EFFECT (Requested) */
+.btn-bubble {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Bouncy transition */
+    border: none;
+}
+
+.btn-bubble::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+    z-index: -1;
+}
+
+.btn-bubble:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 0, 127, 0.4);
+}
+
+.btn-bubble:hover::before {
+    transform: scale(0, 0);
+    opacity: 1;
+    transition: 0s;
+}
+
+/* Floating Animation for Stickers/Images */
+.float-anim {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Odiyamma Theme Classes */
+.bg-odiyamma {
+    background: linear-gradient(135deg, #ffde59 0%, #ff007f 100%);
+    /* Yellow to Pink */
+}
+
+.text-odiyamma {
+    font-family: 'Fredoka', sans-serif;
+    color: #ff007f;
+}
+
+.hero-pattern {
+    background-image: url('../images/odiyamma/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- Custom Cursor Styles --- */
+/* Hide default cursor only on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+    body {
+        cursor: none;
+        /* Hide default cursor */
+    }
+}
+
+/* Main Cursor Container */
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        background-color 0.3s, border-radius 0.3s;
+    mix-blend-mode: exclusion;
+    /* Cool overlay effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Default State: Arrow (Simulated with a small dot or SVG if needed, but here using a dynamic shape) */
+.custom-cursor.default {
+    background-color: white;
+    border-radius: 50%;
+    /* border: 2px solid black; Option for outline */
+}
+
+/* Hover State: Bubble */
+.custom-cursor.bubble {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 127, 0.5);
+    /* Pink tint */
+    border: 2px solid #ff007f;
+    mix-blend-mode: normal;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+}
+
+/* Hover State: Emoji Reaction (e.g. for specific fun elements) */
+.custom-cursor.emoji-mode::after {
+    content: '😲';
+    /* Default, can be changed via JS */
+    font-size: 24px;
+    opacity: 1;
+}
+
+.custom-cursor.emoji-mode {
+    background: transparent;
+    width: auto;
+    height: auto;
+    mix-blend-mode: normal;
+    animation: bounce-cursor 0.5s infinite alternate;
+}
+
+@keyframes bounce-cursor {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+/* Liquid Blob State */
+.custom-cursor.blob {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #ff007f, #00e5ff);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: blob-spin 4s linear infinite;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+}
+
+@keyframes blob-spin {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Trail Dots */
+.cursor-trail {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 229, 255, 0.8);
+    /* Cyan dots */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Hide cursor elements on touch devices to prevent stuck UI */
+@media (hover: none) {
+
+    .custom-cursor,
+    .cursor-trail {
+        display: none !important;
+    }
+}
+
+/* ------------------------- */
+/* Odiyamma Enhancements CSS */
+/* ------------------------- */
+
+/* Floating bubble backgrounds (global) */
+.ody-bubbles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -5;
+    overflow: hidden;
+}
+
+.ody-bubbles .bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.12;
+    filter: blur(6px);
+    animation: bubble-float linear infinite;
+}
+
+@keyframes bubble-float {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-40px) scale(1.05);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Careers: animated job card styles */
+.careers-hero {
+    padding: 4rem 0;
+    background: linear-gradient(120deg, rgba(255, 222, 89, 0.15), rgba(255, 0, 127, 0.06));
+    position: relative;
+    overflow: hidden;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.job-card {
+    background: linear-gradient(180deg, #ffffff, #fff9f6);
+    border-radius: 16px;
+    padding: 1.25rem;
+    position: relative;
+    transition: transform 0.35s cubic-bezier(.2, .9, .2, 1), box-shadow 0.35s;
+    transform-origin: center;
+}
+
+.job-card:hover {
+    transform: translateY(-10px) rotate(-0.5deg) scale(1.02);
+    box-shadow: 0 18px 40px rgba(255, 7, 130, 0.12);
+}
+
+.job-card .job-badge {
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+    padding: .35rem .6rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--ody-pink), var(--ody-cyan));
+    color: white;
+    font-weight: 700;
+}
+
+/* Bubble ripple for hover using pseudo-element */
+.job-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    pointer-events: none;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(.2, .9, .2, 1), opacity 0.5s;
+    background: radial-gradient(circle at var(--ripple-x, 50%) var(--ripple-y, 50%), rgba(255, 255, 255, 0.15), transparent 40%);
+}
+
+.job-card:hover::after {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+/* CTA Join Us button */
+.join-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .75rem 1.1rem;
+    border-radius: 999px;
+    font-weight: 800;
+    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.12);
+}
+
+.join-cta.pulse {
+    animation: ody-pulse 1.8s infinite;
+}
+
+@keyframes ody-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Services: alternating colorful cards */
+.services-grid .service-card {
+    border-radius: 14px;
+    padding: 1.25rem;
+    transition: transform .35s, box-shadow .35s, background .35s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.service-card.ody-1 {
+    background: linear-gradient(135deg, #fff7ef, #ffedde);
+}
+
+.service-card.ody-2 {
+    background: linear-gradient(135deg, #f3f9ff, #e8f8ff);
+}
+
+.service-card.ody-3 {
+    background: linear-gradient(135deg, #fff6fb, #ffe8f5);
+}
+
+.service-card .svc-icon {
+    transition: transform .35s, filter .35s;
+}
+
+.service-card:hover .svc-icon {
+    transform: scale(1.18) translateY(-4px);
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.12));
+}
+
+.service-title {
+    position: relative;
+    display: inline-block;
+}
+
+.service-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, var(--ody-pink), var(--ody-cyan));
+    transition: width .35s;
+    border-radius: 3px;
+}
+
+.service-card:hover .service-title::after {
+    width: 100%;
+}
+
+/* Contact: playful form and map container */
+.contact-wrap {
+    position: relative;
+    padding: 2rem;
+}
+
+.contact-form {
+    background: linear-gradient(180deg, #fff, #fffefc);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form input,
+.contact-form textarea {
+    transition: box-shadow .25s, transform .15s;
+    border-radius: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 6px 20px rgba(255, 0, 127, 0.15);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.map-ody-wrap {
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 6px;
+    background: linear-gradient(135deg, rgba(255, 222, 89, 0.2), rgba(0, 229, 255, 0.08));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Small helper for reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+    .ody-bubbles .bubble,
+    .float-anim,
+    .sticker-float,
+    .btn-bubble {
+        animation: none !important;
+    }
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+    .job-card:hover {
+        transform: none;
+    }
+
+    .service-title::after {
+        bottom: -4px;
+    }
+}
+
+/* Odiyamma character styles (inline SVG decorations) */
+.odiyamma-character {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 120px;
+    height: 120px;
+    pointer-events: none;
+    z-index: 6;
+    transform-origin: center;
+    animation: ody-bob 4s ease-in-out infinite, ody-entrance 700ms ease-out;
+}
+
+.odiyamma-character svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@keyframes ody-bob {
+    0% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+}
+
+@keyframes ody-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* small interaction wiggle when hovering related header */
+.fade-in-up:hover~.odiyamma-character,
+.fade-in-up:focus~.odiyamma-character {
+    animation: ody-bob 2s ease-in-out infinite, ody-wiggle 600ms ease-in-out;
+}
+
+@keyframes ody-wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(8deg);
+    }
+
+    75% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* hide on small screens for clarity */
+@media (max-width: 768px) {
+    .odiyamma-character {
+        display: none;
+    }
+}
+
+/* ----------------------------- */
+/* Odiyamma Runner (Right-to-Left)
+   - Horizontal, lightweight transform-based animation
+   - trailing dots, wiggle, hover interactions
+*/
+
+.ody-runner {
+    position: fixed;
+    top: 18%;
+    left: 0;
+    width: auto;
+    height: auto;
+    pointer-events: auto;
+    z-index: 80;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(120vw);
+    animation: ody-run-left 14s linear infinite;
+}
+
+@keyframes ody-run-left {
+    0% {
+        transform: translateX(120vw);
+    }
+
+    100% {
+        transform: translateX(-40vw);
+    }
+}
+
+.ody-runner .ody-main {
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 28px;
+    background: linear-gradient(135deg, #ffde59 0%, #ff007f 60%, #00e5ff 100%);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    transform-origin: center;
+    transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+    will-change: transform;
+    animation: ody-wiggle 1.6s ease-in-out infinite alternate;
+}
+
+@keyframes ody-wiggle {
+    0% {
+        transform: translateY(0) rotate(-2deg);
+    }
+
+    100% {
+        transform: translateY(-6px) rotate(4deg);
+    }
+}
+
+.ody-runner .ody-trail {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.ody-runner .ody-trail .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #ff007f, #00e5ff);
+    opacity: 0.9;
+    transform-origin: center;
+    transform: translateX(0) scale(0.85);
+    animation: ody-trail 1.2s ease-in-out infinite;
+}
+
+.ody-runner .ody-trail .dot:nth-child(2) {
+    animation-delay: 0.08s;
+}
+
+.ody-runner .ody-trail .dot:nth-child(3) {
+    animation-delay: 0.16s;
+}
+
+.ody-runner .ody-trail .dot:nth-child(4) {
+    animation-delay: 0.24s;
+}
+
+@keyframes ody-trail {
+    0% {
+        transform: translateX(0) scale(0.85);
+        opacity: .9;
+    }
+
+    50% {
+        transform: translateX(-6px) scale(1);
+        opacity: .6;
+    }
+
+    100% {
+        transform: translateX(0) scale(0.85);
+        opacity: .9;
+    }
+}
+
+/* mini emojis along path (decorative, low opacity) */
+.ody-runner .ody-emoji {
+    font-size: 18px;
+    opacity: 0.95;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.08));
+}
+
+/* Hover interactions: expand, glow, pause movement */
+.ody-runner:hover {
+    animation-play-state: paused;
+}
+
+.ody-runner:hover .ody-main {
+    transform: scale(1.18);
+    box-shadow: 0 18px 44px rgba(255, 7, 130, 0.18);
+    filter: saturate(1.08);
+}
+
+.ody-runner:active .ody-main {
+    transform: scale(1.04) translateY(-2px);
+}
+
+/* responsive tuning */
+@media (max-width: 1024px) {
+    .ody-runner {
+        top: 14%;
+    }
+
+    .ody-runner .ody-main {
+        width: 56px;
+        height: 56px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 640px) {
+    .ody-runner {
+        top: 8%;
+        animation-duration: 18s;
+    }
+
+    .ody-runner .ody-main {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .ody-runner .ody-trail .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ody-runner {
+        animation: none;
+        opacity: 0.9;
+    }
+
+    .ody-runner .ody-main {
+        animation: none;
+    }
+
+    .ody-runner .ody-trail .dot {
+        animation: none;
+    }
+}
+
+/* Map embed fixes (affects only the map container and iframe) */
+.map-embed {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    /* Use aspect-ratio technique so iframe fills without unexpected clipping */
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 default */
+}
+
+.map-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    transform: none !important;
+}
+
+@media (min-width:640px) {
+    .map-embed {
+        padding-bottom: 50%;
+    }
+}
+
+@media (min-width:768px) {
+    .map-embed {
+        padding-bottom: 45%;
+    }
+}
+
+@media (min-width:1024px) {
+    .map-embed {
+        padding-bottom: 40%;
+    }
+}
+
+/* Portfolio collage sprite (Legacy, now using individual images in HTML) */
+.portfolio-sprite {
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease, background-position 0.3s ease;
+}
+
+/* positions for the 6 slices (left-to-right, top-to-bottom):
+   slice-1: top-left, slice-2: top-center, slice-3: top-right,
+   slice-4: bottom-left, slice-5: bottom-center, slice-6: bottom-right
+*/
+.slice-1 {
+    background-position: 0% 0%;
+}
+
+.slice-2 {
+    background-position: 50% 0%;
+}
+
+.slice-3 {
+    background-position: 100% 0%;
+}
+
+.slice-4 {
+    background-position: 0% 100%;
+}
+
+.slice-5 {
+    background-position: 50% 100%;
+}
+
+.slice-6 {
+    background-position: 100% 100%;
+}
+
+/* Ensure the background covers the card area responsively */
+.portfolio-sprite.bg-cover {
+    background-size: cover;
+}

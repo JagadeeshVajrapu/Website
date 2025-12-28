@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Harsha Perfect Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#9333ea',
+                        dark: '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold font-heading text-primary hover:text-secondary transition transform hover:scale-105">
+                Harsha Perfect Solutions
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="font-medium hover:text-primary transition relative group">Home</a>
+                <a href="services.html" class="font-medium hover:text-primary transition relative group">Services</a>
+                <a href="careers.html" class="font-medium hover:text-primary transition relative group">Careers</a>
+                <a href="portfolio.html"
+                    class="font-medium text-primary hover:text-primary transition relative group font-bold">Portfolio
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></span>
+                </a>
+                <a href="about.html" class="font-medium hover:text-primary transition relative group">About Us</a>
+                <a href="contact.html"
+                    class="px-5 py-2.5 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="md:hidden bg-white shadow-lg absolute top-full left-0 w-full px-6 flex flex-col items-center gap-4 py-4">
+            <a href="index.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Home</a>
+            <a href="services.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Services</a>
+            <a href="portfolio.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Portfolio</a>
+            <a href="careers.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Careers</a>
+            <a href="contact.html" class="px-5 py-2 bg-primary text-white rounded-full w-full text-center">Contact
+                Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-20 bg-gray-900 text-white relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop')] bg-cover bg-center opacity-20">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10 fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold font-heading mb-4">Our Portfolio</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Discover our journey of innovation, partnership, and
+                success stories.</p>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="fade-in-up">
+                <div class="text-4xl md:text-5xl font-bold mb-2 font-heading stat-number" data-target="150"
+                    data-suffix="+">0</div>
+                <p class="text-blue-100">Successful Projects</p>
+            </div>
+            <div class="fade-in-up" style="transition-delay: 0.1s;">
+                <div class="text-4xl md:text-5xl font-bold mb-2 font-heading stat-number" data-target="50"
+                    data-suffix="+">0</div>
+                <p class="text-blue-100">Satisfied Clients</p>
+            </div>
+            <div class="fade-in-up" style="transition-delay: 0.2s;">
+                <div class="text-4xl md:text-5xl font-bold mb-2 font-heading stat-number" data-target="99"
+                    data-suffix="%">0</div>
+                <p class="text-blue-100">Project Success Rate</p>
+            </div>
+            <div class="fade-in-up" style="transition-delay: 0.3s;">
+                <div class="text-4xl md:text-5xl font-bold mb-2 font-heading">24/7</div>
+                <p class="text-blue-100">Client Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects Gallery (Placeholder Images Used) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-heading">Featured Projects</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: JNTUACEK -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg aspect-video cursor-pointer hover-lift fade-in-up tilt-card">
+                    <div class="w-full h-full bg-cover bg-center transition duration-500 group-hover:scale-110"
+                        style="background-image: url('images/portfolio/jntuacek.png');" role="img"
+                        aria-label="JNTUACEK"></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">JNTUACEK</h3>
+                        <p class="text-gray-300 text-sm">Target: Complete College Suite Software with Hostel Automation,
+                            Fee Management, SIS.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: JNTUKN -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-video cursor-pointer hover-lift fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <div class="w-full h-full bg-cover bg-center transition duration-500 group-hover:scale-110"
+                        style="background-image: url('images/portfolio/jntukn.png');" role="img" aria-label="JNTUKN">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">JNTUKN</h3>
+                        <p class="text-gray-300 text-sm">Target: Under implementation of College Suite Software with
+                            Hostel Automation and SIS.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: ManMade -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-video cursor-pointer hover-lift fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <div class="w-full h-full bg-cover bg-center transition duration-500 group-hover:scale-110"
+                        style="background-image: url('images/portfolio/manmade.png');" role="img" aria-label="ManMade">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">ManMade</h3>
+                        <p class="text-gray-300 text-sm">Target: Online Salon Furniture display and SEO optimized
+                            website.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Beauty Centre -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-video cursor-pointer hover-lift fade-in-up"
+                    style="transition-delay: 0.3s;">
+                    <div class="w-full h-full bg-cover bg-center transition duration-500 group-hover:scale-110"
+                        style="background-image: url('images/portfolio/beauty_centre.png');" role="img"
+                        aria-label="Beauty Centre"></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">Beauty Centre</h3>
+                        <p class="text-gray-300 text-sm">Target: Fully developed ecommerce website and Native Android,
+                            IOS App.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: Mobile Fixer (Inferred) -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-video cursor-pointer hover-lift fade-in-up"
+                    style="transition-delay: 0.4s;">
+                    <div class="w-full h-full bg-cover bg-center transition duration-500 group-hover:scale-110"
+                        style="background-image: url('images/portfolio/mobile_fixer.png');" role="img"
+                        aria-label="Mobile Fixer"></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">Mobile Fixer</h3>
+                        <p class="text-gray-300 text-sm">Mobile Repair Services Website & Booking System.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6: Tennis Theory (Inferred) -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-video cursor-pointer hover-lift fade-in-up"
+                    style="transition-delay: 0.5s;">
+                    <div class="w-full h-full bg-cover bg-center transition duration-500 group-hover:scale-110"
+                        style="background-image: url('images/portfolio/tennis_theory.png');" role="img"
+                        aria-label="Tennis Theory"></div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold">Tennis Theory</h3>
+                        <p class="text-gray-300 text-sm">Educational Sports Platform for Tennis Training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Collaborations -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-heading">Strategic Collaborations</h2>
+                <p class="mt-4 text-gray-600 max-w-3xl mx-auto">Our Memorandum of Understanding (MoU) partnerships
+                    represent our commitment to collaborative growth.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition text-center fade-in-up">
+                    <div
+                        class="w-20 h-20 bg-blue-50 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-primary">
+                        J</div>
+                    <h4 class="font-bold text-xl mb-2">JNTUA University</h4>
+                    <p class="text-sm font-semibold text-primary uppercase mb-4">Academic Partnership</p>
+                    <p class="text-gray-600">Strategic collaboration for research and development in emerging
+                        technologies.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition text-center fade-in-up"
+                    style="transition-delay: 0.1s;">
+                    <div
+                        class="w-20 h-20 bg-purple-50 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-secondary">
+                        T</div>
+                    <h4 class="font-bold text-xl mb-2">TechEduSpace</h4>
+                    <p class="text-sm font-semibold text-secondary uppercase mb-4">Innovation Center</p>
+                    <p class="text-gray-600">Joint innovation lab for cutting-edge technology solutions.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition text-center fade-in-up"
+                    style="transition-delay: 0.2s;">
+                    <div
+                        class="w-20 h-20 bg-green-50 rounded-full mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-green-600">
+                        B</div>
+                    <h4 class="font-bold text-xl mb-2">Betatek</h4>
+                    <p class="text-sm font-semibold text-green-600 uppercase mb-4">Training Partner</p>
+                    <p class="text-gray-600">Skill development and training programs for digital transformation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Gallery Slider -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-heading">Event Gallery</h2>
+                <p class="mt-4 text-gray-600 max-w-3xl mx-auto">Step into the world of HPS through our event gallery.
+                </p>
+            </div>
+
+            <div class="flex gap-8 overflow-x-auto pb-8 snap-x">
+                <!-- Event 1 -->
+                <div
+                    class="min-w-[300px] md:min-w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg relative aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop"
+                        class="w-full h-full object-cover" alt="EduSuite Training">
+                    <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
+                        <h4 class="text-white font-bold text-lg">EduSuite Pro Training</h4>
+                        <p class="text-gray-300 text-sm">Demo session for EduSuite Pro</p>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div
+                    class="min-w-[300px] md:min-w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg relative aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop"
+                        class="w-full h-full object-cover" alt="Career Summit">
+                    <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
+                        <h4 class="text-white font-bold text-lg">Career Guidance Summit</h4>
+                        <p class="text-gray-300 text-sm">27 April 2025</p>
+                    </div>
+                </div>
+
+                <!-- Event 3 (Placeholder) -->
+                <div
+                    class="min-w-[300px] md:min-w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg relative aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070&auto=format&fit=crop"
+                        class="w-full h-full object-cover" alt="Workshop">
+                    <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
+                        <h4 class="text-white font-bold text-lg">Tech Workshop</h4>
+                        <p class="text-gray-300 text-sm">Student Innovation Session</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="py-16 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-xl font-bold text-gray-500 mb-8 uppercase tracking-widest">Trusted by Industry Leaders</h3>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
+                <!-- Using Text placeholders for logos as per instruction to use CDN/font awesome or text if image not available, 
+                     but here using simple text representations for companies mentioned in "Trusted by" section 
+                     In a real scenario, these would be <img> tags
+                -->
+                <span class="text-xl font-bold font-heading text-gray-400 hover:text-primary transition">JNTUACEK</span>
+                <span class="text-xl font-bold font-heading text-gray-400 hover:text-primary transition">JNTUKN</span>
+                <span class="text-xl font-bold font-heading text-gray-400 hover:text-primary transition">Beauty
+                    Centre</span>
+                <span class="text-xl font-bold font-heading text-gray-400 hover:text-primary transition">ManMade</span>
+                <span class="text-xl font-bold font-heading text-gray-400 hover:text-primary transition">XPTL</span>
+                <span class="text-xl font-bold font-heading text-gray-400 hover:text-primary transition">Suryan
+                    Energy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Harsha Perfect Solutions</h3>
+                    <p class="text-sm leading-relaxed mb-6">Your Growth, Our Commitment. We deliver innovative software
+                        and IT solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-primary transition">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-primary transition">Portfolio</a></li>
+                        <li><a href="careers.html" class="hover:text-primary transition">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>Web Design & Development</li>
+                        <li>EduSuite Pro</li>
+                        <li>Mobile App Development</li>
+                        <li>Digital Marketing</li>
+                        <li>Business Solutions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Get in Touch</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>31-7-67, Assam Garden St, Bangaramma Metta, Mahaarajupeta, Visakhapatnam, Andhra
+                                Pradesh 530020</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+91 9246615251</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>info@thehps.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 Harsha Perfect Solutions Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>

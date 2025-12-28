@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Join Harsha Perfect Solutions</title>
+    <meta name="description"
+        content="Build your legacy with HPS. Join our dynamic team of visionaries and creators reshaping the digital landscape. Check out our open positions and culture.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#9333ea',
+                        dark: '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold font-heading text-primary hover:text-secondary transition transform hover:scale-105">
+                Harsha Perfect Solutions
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="font-medium hover:text-primary transition relative group">Home</a>
+                <a href="services.html" class="font-medium hover:text-primary transition relative group">Services</a>
+                <a href="careers.html"
+                    class="font-medium text-primary hover:text-primary transition relative group font-bold">
+                    Careers
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></span>
+                </a>
+                <a href="portfolio.html" class="font-medium hover:text-primary transition relative group">Portfolio</a>
+                <a href="about.html" class="font-medium hover:text-primary transition relative group">About Us</a>
+                <a href="contact.html"
+                    class="px-5 py-2.5 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="md:hidden bg-white shadow-lg absolute top-full left-0 w-full px-6 flex flex-col items-center gap-4 py-4 hidden">
+            <a href="index.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Home</a>
+            <a href="services.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Services</a>
+            <a href="portfolio.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">Portfolio</a>
+            <a href="about.html"
+                class="font-medium hover:text-primary py-2 w-full text-center border-b border-gray-100">About Us</a>
+            <a href="careers.html"
+                class="font-medium text-primary py-2 w-full text-center border-b border-gray-100 font-bold">Careers</a>
+            <a href="contact.html" class="px-5 py-2 bg-primary text-white rounded-full w-full text-center">Contact
+                Us</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-20 bg-gray-900 text-white relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10 fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold font-heading mb-4">Build Your Legacy with HPS</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Join a dynamic collective of visionaries, innovators, and
+                creators who are reshaping the digital landscape.</p>
+            <div class="odiyamma-character" aria-hidden="true">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img">
+                    <defs>
+                        <linearGradient id="ody-face" x1="0" x2="1">
+                            <stop offset="0" stop-color="#ffde59"/>
+                            <stop offset="1" stop-color="#ff007f"/>
+                        </linearGradient>
+                    </defs>
+                    <g>
+                        <circle cx="40" cy="40" r="36" fill="url(#ody-face)" stroke="#fff" stroke-width="2"/>
+                        <ellipse cx="30" cy="34" rx="6" ry="7" fill="#fff" opacity="0.95"/>
+                        <ellipse cx="50" cy="34" rx="6" ry="7" fill="#fff" opacity="0.95"/>
+                        <circle cx="30" cy="35" r="2" fill="#111"/>
+                        <circle cx="50" cy="35" r="2" fill="#111"/>
+                        <path d="M26 48 Q36 58 50 48" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <g transform="translate(68,6)">
+                            <path d="M6 44 C4 36, 26 30, 32 36" stroke="#ff007f" stroke-width="3" fill="none" opacity="0.9"/>
+                        </g>
+                        <g>
+                            <rect x="10" y="68" width="20" height="6" rx="3" fill="#fff" opacity="0.6" transform="rotate(-12 20 71)"/>
+                            <rect x="54" y="68" width="20" height="6" rx="3" fill="#fff" opacity="0.6" transform="rotate(12 64 71)"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-heading mb-8 text-gray-900">Create Impact at Scale</h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                At HPS, we're not just building software—we're crafting solutions that transform businesses, empower
+                communities, and drive meaningful change. If you're passionate about pushing technological boundaries,
+                you've found your home.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                We're constantly seeking exceptional talent—creative problem-solvers, technical virtuosos, and
+                forward-thinking leaders who thrive in collaborative environments and aren't afraid to challenge
+                conventions. Your journey here will be more than a career; it will be an opportunity to grow, innovate,
+                and leave your mark on the future of technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Join HPS -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-heading">Why Join HPS?</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-600">We believe in creating an environment where talented individuals can
+                    thrive.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Competitive Salary</h3>
+                    <p class="text-gray-600">We offer competitive compensation packages that reflect your skills and
+                        experience.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Health Benefits</h3>
+                    <p class="text-gray-600">Comprehensive health insurance and wellness programs for you and your
+                        family.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Career Growth</h3>
+                    <p class="text-gray-600">Continuous learning opportunities and clear career progression paths.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 text-2xl mb-6">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Work-Life Balance</h3>
+                    <p class="text-gray-600">Flexible working hours and remote work options to maintain a healthy
+                        balance.</p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 text-2xl mb-6">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Great Team</h3>
+                    <p class="text-gray-600">Work with talented, passionate professionals in a collaborative
+                        environment.</p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-6">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Innovation</h3>
+                    <p class="text-gray-600">Be part of cutting-edge projects using the latest technologies and
+                        methodologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Culture -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-heading">Our Culture</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+                            1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Innovation First</h3>
+                            <p class="text-gray-600">We encourage creative thinking and embrace new technologies to
+                                solve complex problems. Our team is empowered to experiment, take calculated risks, and
+                                push boundaries.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+                            2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Collaborative Spirit</h3>
+                            <p class="text-gray-600">Teamwork is at the heart of everything we do. Our open
+                                communication culture ensures every voice is heard, ideas are shared freely, and
+                                knowledge flows seamlessly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+                            3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Continuous Learning</h3>
+                            <p class="text-gray-600">We invest in our team's growth through training, conferences, and
+                                skill development programs. We provide resources for professional development that keep
+                                our team at the forefront.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+                            4</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Work-Life Balance</h3>
+                            <p class="text-gray-600">We understand the importance of maintaining a healthy balance.
+                                Flexible schedules and respect for personal time ensure our team members can thrive both
+                                professionally and personally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-heading mb-8">Open Positions</h2>
+
+            <div class="bg-white p-12 rounded-2xl shadow-sm border border-gray-100">
+                <div
+                    class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl text-gray-500">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">No Open Positions Currently</h3>
+                <p class="text-gray-600 mb-8">
+                    While we're currently between hiring cycles, our doors are always open to exceptional talent. Great
+                    candidates rarely fit into predefined boxes, and we believe in creating roles for the right people
+                    rather than waiting for perfect timing.
+                </p>
+                <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <p class="font-medium text-blue-900 mb-4">We're always excited to meet passionate individuals.</p>
+                    <a href="mailto:careers@thehps.in"
+                        class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white rounded-full font-bold hover:bg-secondary transition shadow-lg hover:shadow-xl">
+                        Send Your Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <p class="text-gray-500 text-sm">Don't see your role? Feel free to send us your resume, and we'll keep
+                    you in mind for future opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Harsha Perfect Solutions</h3>
+                    <p class="text-sm leading-relaxed mb-6">Your Growth, Our Commitment. We deliver innovative software
+                        and IT solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-primary transition">Services</a></li>
+                        <li><a href="careers.html" class="text-primary font-bold">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>Web Design & Development</li>
+                        <li>Mobile App Development</li>
+                        <li>Digital Marketing</li>
+                        <li>UI/UX Design</li>
+                        <li>ERP Solutions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Get in Touch</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>31-7-67, Assam Garden St, Bangaramma Metta, Mahaarajupeta, Visakhapatnam, Andhra
+                                Pradesh 530020</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <span>+91 9246615251</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <span>info@thehps.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 Harsha Perfect Solutions Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
